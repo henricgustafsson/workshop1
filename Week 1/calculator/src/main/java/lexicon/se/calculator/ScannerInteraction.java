@@ -1,4 +1,4 @@
-package lexicon.se.calculator.calculator;
+package lexicon.se.calculator;
 
 
 import java.util.Scanner;
@@ -53,7 +53,8 @@ public class ScannerInteraction {
 				}
 			}
 			else {
-				throw new IllegalArgumentException();
+				System.out.println("Please enter a number!");
+				getNumbersToCalculateArr();
 			}
 			
 		

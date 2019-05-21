@@ -1,4 +1,4 @@
-package lexicon.se.calculator.calculator;
+package lexicon.se.calculator;
 
 import java.util.Arrays;
 
@@ -10,9 +10,8 @@ import java.util.Arrays;
 public class MathOperations {
 	
 	
-	
 	public MathOperations(){
-		// TODO Auto-generated constructor stub
+		
 	}
 
 
@@ -22,8 +21,8 @@ public class MathOperations {
 	 * @param int[] numbersToCalculateArr
 	 * @return int sum
 	 */
-	public int addNumbers(int[] numbersToCalculateArr) {
-		int sum = 0;
+	public double addNumbers(int[] numbersToCalculateArr) {
+		double sum = 0;
 		for (int number : numbersToCalculateArr) {
 			sum+=number;
 		}		  	
@@ -43,9 +42,9 @@ public class MathOperations {
 	 * @param numbersToCalculateArr
 	 * @return int sum
 	 */
-	public  int subtractNumbers(int[] numbersToCalculateArr) {
+	public double subtractNumbers(int[] numbersToCalculateArr) {
 		
-		int sum=0;
+		double sum=0;
 		Arrays.sort(numbersToCalculateArr);
 		int lastElementPos = numbersToCalculateArr.length-1;
 		sum = numbersToCalculateArr[lastElementPos];
@@ -65,8 +64,8 @@ public class MathOperations {
 	 * @param numbersToCalculateArr
 	 * @return int sum
 	 */
-	public  int multiplyNumbers(int[] numbersToCalculateArr) {
-		int sum = 1;
+	public double multiplyNumbers(int[] numbersToCalculateArr) {
+		double sum = 1;
 		
 		for (int i = 0; i < numbersToCalculateArr.length; i++) {
 			sum *=numbersToCalculateArr[i];
@@ -81,8 +80,8 @@ public class MathOperations {
 	 * @param numbersToCalculateArr
 	 * @return int sum
 	 */
-	public  int divideNumbers(int[] numbersToCalculateArr) {
-		int sum=0;
+	public double divideNumbers(int[] numbersToCalculateArr) {
+		double sum=0;
 		
 		Arrays.sort(numbersToCalculateArr);
 		

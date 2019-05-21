@@ -1,4 +1,4 @@
-package lexicon.se.calculator.calculator;
+package lexicon.se.calculator;
 
 import java.util.Scanner;
 
