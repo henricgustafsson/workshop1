@@ -1,18 +1,27 @@
 package lexicon.se.calculator.calculator;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
+/**
+ * @author Henric Gustafsson
+ * 
+ *
+ */
 public class MathOperations {
 	
-	private ScannerInteraction scannerInteraction;
 	
-	public MathOperations(ScannerInteraction scannerInteraction) {
-		this.scannerInteraction = scannerInteraction;
-		
+	
+	public MathOperations(){
+		// TODO Auto-generated constructor stub
 	}
 
 
+	/** Method for addition. 
+	 * Iterates through the integer array passed as a parameter
+	 * adding the value of each element to the integer sum.
+	 * @param int[] numbersToCalculateArr
+	 * @return int sum
+	 */
 	public int addNumbers(int[] numbersToCalculateArr) {
 		int sum = 0;
 		for (int number : numbersToCalculateArr) {
@@ -24,6 +33,16 @@ public class MathOperations {
 }
 
 
+	/** Method for subtraction.
+	 * Sorts the integer array passed as a parameter in ascending order,
+	 * sets the integer sum to the value of the last element
+	 * with highest value.
+	 * Iterates through the array starting at the 2nd to last element
+	 * & subtracts each following element stored in the integer sum.
+	 * 
+	 * @param numbersToCalculateArr
+	 * @return int sum
+	 */
 	public  int subtractNumbers(int[] numbersToCalculateArr) {
 		
 		int sum=0;
@@ -41,6 +60,11 @@ public class MathOperations {
 		
 	}
 	
+	/**Iterates through the integer array passed as a parameter,
+	 * multiplying the value of each element to the sum stored in the integer sum.
+	 * @param numbersToCalculateArr
+	 * @return int sum
+	 */
 	public  int multiplyNumbers(int[] numbersToCalculateArr) {
 		int sum = 1;
 		
@@ -50,6 +74,13 @@ public class MathOperations {
 		return sum;
 	}
 	
+	/**Sorts the array passed as a parameter, sets integer sum to 
+	 * the value of the last element, iterates starting with the 2nd
+	 * to last element dividing the integer sum with the value
+	 * of each element.
+	 * @param numbersToCalculateArr
+	 * @return int sum
+	 */
 	public  int divideNumbers(int[] numbersToCalculateArr) {
 		int sum=0;
 		
