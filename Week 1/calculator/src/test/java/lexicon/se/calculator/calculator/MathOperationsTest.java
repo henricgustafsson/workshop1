@@ -9,7 +9,7 @@ import org.junit.Test;
 import lexicon.se.calculator.MathOperations;
 
 public class MathOperationsTest {
-
+	
 	private MathOperations testMathOperations;
 	
 	@Before
